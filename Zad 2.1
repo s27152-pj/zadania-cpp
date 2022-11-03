@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int n = 0;
+    int wynik = 0;
+    int wynikk = 0;
+    int suma = 0;
+    
+    cout << "Podaj dlugosc szeregu: ";
+    cin >> n;
+    cout << endl;
+    
+    for (int i=1;i<=n;i++)
+    {
+        wynik += i;
+        suma += wynik;
+        
+        for (int j=1;j<=i;j++)
+        {
+            cout << j;
+            if (j < i)
+            {
+                cout << " + ";
+            }    
+        }
+        cout << " = " << wynik << endl;
+    }
+    cout << endl;
+    cout << "Suma szeregu: ";
+    
+    for (int i=1;i<=n;i++)
+    {
+        wynikk += i;
+        cout << wynikk;
+        
+        if (i<n)
+        {
+            cout << " + ";
+        }
+    }
+    cout << " = " << suma;
+}
