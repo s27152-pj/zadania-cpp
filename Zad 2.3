@@ -1,0 +1,54 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a = 0;
+    std::string p = "Pochmurno";
+    std::string s = "Slonecznie";
+    cout << "Wpisz numer miesiaca w roku nieprzestepnym (Z przedziału [1,12]: ";
+    cin >> a;
+
+   switch (a)
+    {
+        case 1:
+            cout << "Styczen ma 31 dni, i jest " << p;
+            break;
+        case 2:
+            cout << "Luty ma 28 dni, i jest " << p;
+            break;
+        case 3:
+            cout << "Marzec ma 31 dni, i jest " << p;
+            break;
+        case 4:
+            cout << "Kwiecien ma 30 dni, i jest " << s;
+            break;
+        case 5:
+            cout << "Maj ma 31 dni, i jest " << s;
+            break;
+        case 6:
+            cout << "Czerwiec ma 30 dni, i jest " << s;
+            break;
+        case 7:
+            cout << "Lipiec ma 31 dni, i jest " << s;
+            break;
+        case 8:
+            cout << "Sierpien ma 31 dni, i jest " << s;
+            break;
+        case 9:
+            cout << "Wrzesen ma 30 dni, i jest " << s;
+            break;
+        case 10:
+            cout << "Pazdziernik ma 31 dni, i jest " << p;
+            break;
+        case 11:
+            cout << "listopad ma 30 dni, i jest " << p;
+            break;
+        case 12:
+            cout << "Grodzien ma 31 dni, i jest " << p;
+            break;
+        default:
+            cout << "Nie ma takiego miesiaca :c"; //smutna buzka
+    }
+}
