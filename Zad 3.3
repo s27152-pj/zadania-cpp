@@ -1,0 +1,86 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+
+
+int main() {
+    cout << "Postac rownania kwadratowego: Ax² + Bx + C" << endl;
+
+
+
+   int x = 0;
+    int y = 0;
+    int z = 0;
+    int d = 0;
+    int x1, x2;
+
+
+
+   cout << "Podaj parametr A (liczba): ";
+    cin >> x;
+
+
+
+   cout << "Podaj parametr B (liczba): ";
+    cin >> y;
+
+
+
+   cout << "Podaj parametr C (liczba): ";
+    cin >> z;
+
+
+
+   if (x == 0) {
+        cout << "Liczba A w rownaniu kwadratowym nie moze byc rowna 0" << endl;
+        return 0;
+    }
+    else;
+        cout << x;
+        if (y < 0) {
+            cout << "x² + (" << y << ")";
+        }
+        if (y >= 0) {
+            cout << "x² + " << y;
+        }
+        if (z < 0) {
+            cout << "x + (" << z << ")";
+        }
+        if (z >= 0) {
+            cout << "x + " << z;
+        }
+        
+        cout << endl;
+
+
+
+       d = pow(y, 2) - (4 * x * z);
+        int pd = sqrt(d);
+
+
+
+       if (d >= 0) {
+
+
+
+           x1 = (-y - pd) / (2 * x);
+
+
+
+           x2 = (-y + pd) / (2 * x);
+            if (d == 0) {
+                int x0 = -y / (2 * x);
+                cout << "Delta jest rowna: " << d << endl;
+                cout << "Delta ma tylko jeden pierwiastek i jest on równy: " << x0 << endl;
+                return 0;
+            }
+            else;
+                cout << "Delta jest rowna: " << d << endl;
+                cout << "Pierwszy pierwiastek delty jest rowny: " << x1 << endl;
+                cout << "Drogi pierwiastek delty jest rowny: " << x2 << endl;
+            return 0;
+        }
+        else;
+        cout << "Rownaie kwadratowe nie posiada pierwiastkow" << endl;
+}
