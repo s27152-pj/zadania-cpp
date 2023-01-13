@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    string x;
+    string b;
+    int n;
+    
+    cout << "Jaki jest string do konkatenacji: ";
+    cin >> x;
+    cout << endl << "Jaka jest liczba konkatenacji: ";
+    cin >> n;
+    
+    for (int i = 1; i <= n+1; i++){
+        b += x;
+    }
+    
+    cout << "Odp: " << b; 
+    
+    return 0;
+}
