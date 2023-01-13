@@ -1,0 +1,32 @@
+#include <iostream>
+
+using namespace std;
+
+
+int main(){
+	int table[100];
+	int x;
+	cout << "Jaka jest dlugosc tablicy?: ";
+	cin >> x;
+	cout << endl;
+	for (int i=0; i<x; i++) {
+		cout << "Jaka liczba znajduje się na pozycji: " << i + 1 << endl;
+		cin >> table[i];
+		cout << endl;
+	}
+    cout << "Twoja tablica to:  ";
+	for (int i = 0; i < x; i++) {
+		cout << table[i];
+	}
+	cout << endl << endl;
+
+	int a = 0;
+	int b = 0;
+	for (int i = 0; i < x; i++) {
+		a = table[i];
+			if (a >= b) {
+				b = a;
+			}			
+	}
+	cout << "Najwieszka wartosc tej tablicy to:  " << b;
+}
