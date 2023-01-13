@@ -1,0 +1,39 @@
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    string x[7];
+    int y[7], z[7], k[7], l[7], n, b, c;
+    string p[4]={"informatyki", "matematyki", "chemii" ,"j. pol."};
+
+    for (int i = 1; i <= 6; i++){
+        cout << "Podaj imię ucznia o numerze " << i << ": ";
+        cin >> x[i];
+        cout << "Podaj jego ocene z informatyki : ";
+        cin >> y[i];
+        cout << "Podaj jego ocene z matematyki : ";
+        cin >> z[i];
+        cout << "Podaj jego ocene z chemii : ";
+        cin >> k[i];
+        cout << "Podaj jego ocene z j. pol. : ";
+        cin >> l[i];
+    } 
+
+    cout << "Jaka jest ilosc zapytan?: ";
+    cin >> n;
+    
+    for (int i = 1; i <= n; i++){
+        cout << "Podaj nr ucznia [1..6] : ";
+        cin >> b;
+        cout << "Podaj nr przedmiotu [0..3] : ";
+        cin >> c;
+        cout << "Uczen: " << x[b] << ", ocena z " << p[c] << ": ";
+        if (c==0) cout << y[b];
+        if (c==1) cout << z[b];
+        if (c==2) cout << k[b];
+        if (c==3) cout << l[b];
+        cout << endl;
+    }
+    return 0;
+}
