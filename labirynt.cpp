@@ -37,7 +37,7 @@ void Ruch(int poruszanie, int& pX, int& pY) { //& odpowiada za referencje do inf
         break;
 
     case dol:
-        if (pY + 1 <= 9) {
+        if (pY + 1 <= 10) {
             if (labirynt[pY + 1][pX] != '#') {
                 pY++;
             }
@@ -53,7 +53,7 @@ void Ruch(int poruszanie, int& pX, int& pY) { //& odpowiada za referencje do inf
         break;
 
     case prawo:
-        if (pX + 1 <= 19) {
+        if (pX + 1 <= 20) {
             if (labirynt[pY][pX + 1] != '#') {
                 pX++;
             }
